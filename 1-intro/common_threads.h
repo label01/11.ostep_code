@@ -10,13 +10,13 @@
 #include "semaphore.h"
 #endif //__linux__
 
-#define Pthread_create(thread, attr, start_routine, arg)        assert(pthreard_create(thread, attr,start_routine, arg) == 0);
-#define Pthread_join(thread,value_ptr)                          assert(pthreard_join(thread,value_ptr) == 0);
+#define Pthread_create(thread, attr, start_routine, arg)        assert(pthread_create(thread, attr,start_routine, arg) == 0);
+#define Pthread_join(thread,value_ptr)                          assert(pthread_join(thread,value_ptr) == 0);
 
-#define Pthread_mutex_lock(m)                                   assert(pthreard_mutex_lock(m) == 0);
-#define Pthread_muetx_unlock(m)                                 assert(pthreard_unlock(m) == 0);
-#define Pthread_cond_signal(cond)                               assert(pthreard_cond_signal(cond) == 0);
-#define Pthread_cond_wiat(cond, mutex)                          assert(pthreard_cond_wiat(cond, mutex) == 0);
+#define Pthread_mutex_lock(m)                                   assert(pthread_mutex_lock(m) == 0);
+#define Pthread_muetx_unlock(m)                                 assert(pthread_unlock(m) == 0);
+#define Pthread_cond_signal(cond)                               assert(pthread_cond_signal(cond) == 0);
+#define Pthread_cond_wiat(cond, mutex)                          assert(pthread_cond_wiat(cond, mutex) == 0);
 
 
 #define Mutex_init(m)                                           assert(pthread_mutex_init(m, NULL) == 0);

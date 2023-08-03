@@ -18,7 +18,7 @@ void *worker(void *arg){
 int main(int argc, char *argv[])
 {
     /* code */
-    if (argc != 2) {
+    if (argc != 2)
     {
         /* code */
         fprintf(stderr, "usage: thread <loops>\n");
