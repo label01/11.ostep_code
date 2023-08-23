@@ -14,7 +14,7 @@
 #define Pthread_join(thread,value_ptr)                          assert(pthread_join(thread,value_ptr) == 0);
 
 #define Pthread_mutex_lock(m)                                   assert(pthread_mutex_lock(m) == 0);
-#define Pthread_muetx_unlock(m)                                 assert(pthread_unlock(m) == 0);
+#define Pthread_muetx_unlock(m)                                 assert(pthread_mutex_unlock(m) == 0);
 #define Pthread_cond_signal(cond)                               assert(pthread_cond_signal(cond) == 0);
 #define Pthread_cond_wiat(cond, mutex)                          assert(pthread_cond_wiat(cond, mutex) == 0);
 
