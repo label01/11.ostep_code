@@ -24,7 +24,7 @@
 #define Mutex_unlock(m)                                         assert(pthread_mutex_unlock(m) == 0);
 #define Cond_init(cond)                                         assert(pthread_cond_init(cond, NULL) == 0);
 #define Cond_signal(cond)                                       assert(pthread_cond_signal(cond) == 0);
-#define Cond_wait(cond)                                         assert(pthread_cond_wait(cond, mutex) == 0);
+#define Cond_wait(cond, mutex)                                         assert(pthread_cond_wait(cond, mutex) == 0);
 
 #ifdef __linux__
 #define Sem_init(sem, value)                                    assert(sem_init(sem, 0, value) == 0);
