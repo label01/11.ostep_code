@@ -52,7 +52,7 @@ void *child(void *arg){
 int main(int argc, char *argv[]){
     pthread_t p;
     printf("parent: begin\n");
-    sysnc_init(&s);
+    sync_init(&s);
     Pthread_create(&p, NULL, child, NULL);
     sync_wait(&s);
     printf("parent: end\n");

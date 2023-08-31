@@ -24,7 +24,9 @@ int consumers = 1;
 int verbose = 1;
 
 void do_fill(int value){
+    /*将给定的value存储到缓冲区的fill_ptr位置，即当前的填充指针位置。*/
     buffer[fill_ptr] = value;
+    /*每次填充都往前填充一位， 如果达到最大值，就绕回缓冲区的起始位置*/
     fill_ptr = (fill_ptr + 1) % max;
     num_full++;
 }

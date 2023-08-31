@@ -56,7 +56,7 @@ void *producer(void *arg){
             /* code */
             Cond_wait(&empty, &m);
         }
-        do_file(-1);
+        do_fill(-1);
         Cond_signal(&fill);
         Mutex_unlock(&m);
         
