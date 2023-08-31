@@ -69,7 +69,7 @@ void *producer(void *arg){
 
 void *consumer(void *arg){
     int tmp = 0;
-    while (tmp != 0)
+    while (tmp != -1)
     {
         /* code */
         while (num_full == 0)
