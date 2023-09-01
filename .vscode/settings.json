@@ -3,6 +3,8 @@
         "pthread.h": "c",
         "common_threads.h": "c",
         "common.h": "c",
-        "semaphore.h": "c"
+        "semaphore.h": "c",
+        "thread": "c",
+        "complex": "c"
     }
 }
