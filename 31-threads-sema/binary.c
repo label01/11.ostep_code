@@ -33,8 +33,8 @@ int main(int argc, char *argv[]){
     pthread_t c1, c2;
     Pthread_create(&c1, NULL, child, NULL);
     Pthread_create(&c2, NULL, child, NULL);
-    Pthread_join(&c1, NULL);
-    Pthread_join(&c2, NULL);
+    Pthread_join(c1, NULL);
+    Pthread_join(c2, NULL);
     printf("result: %d (should be 20000000)\n", counter);
     return 0;
 }

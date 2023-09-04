@@ -28,7 +28,7 @@ void Zem_wait(Zem_t *z) {
 }
 
 void Zem_post(Zem_t *z){
-    Mutex_lock(&z->lock);(&z->lock);
+    Mutex_lock(&z->lock);
     z->value++;
     Cond_signal(&z->cond);
     Mutex_unlock(&z->lock);
