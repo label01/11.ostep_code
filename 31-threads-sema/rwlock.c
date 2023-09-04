@@ -91,7 +91,7 @@ int main(int argc, char *argv[]){
 
     read_loops = atoi(argv[1]);
     write_loops = atoi(argv[2]);
-
+ 
     rwlock_init(&mutex);
     pthread_t c1, c2;
     Pthread_create(&c1, NULL, reader, NULL);

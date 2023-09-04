@@ -5,6 +5,8 @@
         "common.h": "c",
         "semaphore.h": "c",
         "thread": "c",
-        "complex": "c"
+        "complex": "c",
+        "random": "c",
+        "stdlib.h": "c"
     }
 }
